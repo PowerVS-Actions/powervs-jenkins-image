@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts-jdk11
 
 MAINTAINER Sumangal.Mugalikar@ibm.com
 
-LABEL LATEST_UPDATE=October,14,2022
+LABEL LATEST_UPDATE=November,04,2022
 
 USER root
 
