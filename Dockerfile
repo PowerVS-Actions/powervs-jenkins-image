@@ -25,3 +25,4 @@ USER jenkins
 RUN jenkins-plugin-cli --plugins blueocean:1.27.10
 
 ### This is a base Jenkins image used to manage PowerVS resources.
+
