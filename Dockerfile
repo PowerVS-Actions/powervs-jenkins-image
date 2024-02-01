@@ -1,10 +1,8 @@
 FROM jenkins/jenkins:lts-jdk11
 
-MAINTAINER miyamotoh@us.ibm.com
-
 LABEL LATEST_UPDATE=February,1,2024
 
-LABEL org.opencontainers.image.authors="rpsene@br.ibm.com,Sumangal.Mugalikar@ibm.com"
+LABEL org.opencontainers.image.authors="miyamotoh@us.ibm.com,Sumangal.Mugalikar@ibm.com,rpsene@br.ibm.com"
 
 USER root
 
