@@ -4,6 +4,8 @@ MAINTAINER miyamotoh@us.ibm.com
 
 LABEL LATEST_UPDATE=February,1,2024
 
+LABEL org.opencontainers.image.authors="rpsene@br.ibm.com,Sumangal.Mugalikar@ibm.com"
+
 USER root
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-transport-https \
@@ -25,4 +27,3 @@ USER jenkins
 RUN jenkins-plugin-cli --plugins blueocean:1.27.10
 
 ### This is a base Jenkins image used to manage PowerVS resources.
-
