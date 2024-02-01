@@ -1,8 +1,8 @@
 FROM jenkins/jenkins:lts-jdk11
 
-MAINTAINER Sumangal.Mugalikar@ibm.com
+MAINTAINER miyamotoh@us.ibm.com
 
-LABEL LATEST_UPDATE=November,18,2022
+LABEL LATEST_UPDATE=February,1,2024
 
 USER root
 
@@ -22,6 +22,6 @@ RUN apt-get update && apt-get install -y docker-ce-cli
 USER jenkins
 
 #https://plugins.jenkins.io/blueocean/
-RUN jenkins-plugin-cli --plugins blueocean:1.25.8
+RUN jenkins-plugin-cli --plugins blueocean:1.27.10
 
 ### This is a base Jenkins image used to manage PowerVS resources.
